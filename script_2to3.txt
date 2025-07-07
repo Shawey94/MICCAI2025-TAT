@@ -1,0 +1,60 @@
+#use learned cp mask-------------------------------------------------------------------
+# AD-LBD
+
+# 2 classes the maximum entropy is 1 bit!!
+
+2 classes to 3 classes
+
+#1 voxel
+python3 main.py --train_batch_size 16 --eval_batch_size 16 --dataset AD-LBD --name al --source_list data/ADLBD_2to3/adni_list_sc_noRemoveZeros_2to3.txt --target_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3.txt --test_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3.txt --s_num_classes 2 --t_num_classes 3 --model_type ViT-S_16 --pretrained_dir checkpoint/sam_ViT-S_16.npz --num_steps 10000 --beta 1.0 --gamma 0.01 --entropy_th 0.9 --learning_rate 0.07 --gpu_id 1 --use_cp --optimal 0 --perturbationRatio 0.0 --warmup_steps 1000
+
+python3 main.py --train_batch_size 16 --eval_batch_size 16 --dataset AD-LBD --name al --source_list data/ADLBD_2to3/adni_list_sc_noRemoveZeros_2to3.txt --target_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3.txt --test_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3.txt --s_num_classes 2 --t_num_classes 3 --model_type ViT-S_16 --pretrained_dir checkpoint/sam_ViT-S_16.npz --num_steps 10000 --beta 1.0 --gamma 0.01 --entropy_th 0.9 --learning_rate 0.06 --gpu_id 0 --use_cp --optimal 0 --perturbationRatio 0.0 --warmup_steps 1000
+
+python3 main.py --train_batch_size 16 --eval_batch_size 16 --dataset AD-LBD --name al --source_list data/ADLBD_2to3/adni_list_sc_noRemoveZeros_2to3.txt --target_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3.txt --test_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3.txt --s_num_classes 2 --t_num_classes 3 --model_type ViT-S_16 --pretrained_dir checkpoint/sam_ViT-S_16.npz --num_steps 10000 --beta 1.0 --gamma 0.01 --entropy_th 0.9 --learning_rate 0.08 --gpu_id 0 --use_cp --optimal 0 --perturbationRatio 0.0 --warmup_steps 1000
+
+python3 main.py --train_batch_size 16 --eval_batch_size 16 --dataset AD-LBD --name al --source_list data/ADLBD_2to3/adni_list_sc_noRemoveZeros_2to3.txt --target_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3.txt --test_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3.txt --s_num_classes 2 --t_num_classes 3 --model_type ViT-S_16 --pretrained_dir checkpoint/sam_ViT-S_16.npz --num_steps 10000 --beta 1.0 --gamma 0.01 --entropy_th 0.8 --learning_rate 0.07 --gpu_id 1 --use_cp --optimal 0 --perturbationRatio 0.0 --warmup_steps 1000
+
+
+#2 voxel
+
+python3 main.py --train_batch_size 16 --eval_batch_size 16 --dataset AD-LBD --name al --source_list data/ADLBD_2to3/adni_list_sc_noRemoveZeros_2to3.txt --target_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3_2voxels.txt --test_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3_2voxels.txt --s_num_classes 2 --t_num_classes 3 --model_type ViT-S_16 --pretrained_dir checkpoint/sam_ViT-S_16.npz --num_steps 10000 --beta 1.0 --gamma 0.1 --entropy_th 0.85 --learning_rate 0.06 --gpu_id 0 --use_cp --optimal 0 --perturbationRatio 0.0 --warmup_steps 1000
+
+python3 main.py --train_batch_size 16 --eval_batch_size 16 --dataset AD-LBD --name al --source_list data/ADLBD_2to3/adni_list_sc_noRemoveZeros_2to3.txt --target_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3_2voxels.txt --test_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3_2voxels.txt --s_num_classes 2 --t_num_classes 3 --model_type ViT-S_16 --pretrained_dir checkpoint/sam_ViT-S_16.npz --num_steps 10000 --beta 0.1 --gamma 1.0 --entropy_th 0.85 --learning_rate 0.06 --gpu_id 0 --use_cp --optimal 0 --perturbationRatio 0.0 --warmup_steps 1000
+
+python3 main.py --train_batch_size 16 --eval_batch_size 16 --dataset AD-LBD --name al --source_list data/ADLBD_2to3/adni_list_sc_noRemoveZeros_2to3.txt --target_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3_2voxels.txt --test_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3_2voxels.txt --s_num_classes 2 --t_num_classes 3 --model_type ViT-S_16 --pretrained_dir checkpoint/sam_ViT-S_16.npz --num_steps 10000 --beta 0.1 --gamma 0.01 --entropy_th 0.85 --learning_rate 0.06 --gpu_id 0 --use_cp --optimal 0 --perturbationRatio 0.0 --warmup_steps 1000
+
+python3 main.py --train_batch_size 16 --eval_batch_size 16 --dataset AD-LBD --name al --source_list data/ADLBD_2to3/adni_list_sc_noRemoveZeros_2to3.txt --target_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3_2voxels.txt --test_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3_2voxels.txt --s_num_classes 2 --t_num_classes 3 --model_type ViT-S_16 --pretrained_dir checkpoint/sam_ViT-S_16.npz --num_steps 10000 --beta 0.1 --gamma 0.1 --entropy_th 0.85 --learning_rate 0.06 --gpu_id 0 --use_cp --optimal 0 --perturbationRatio 0.0 --warmup_steps 1000
+
+python3 main.py --train_batch_size 16 --eval_batch_size 16 --dataset AD-LBD --name al --source_list data/ADLBD_2to3/adni_list_sc_noRemoveZeros_2to3.txt --target_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3_2voxels.txt --test_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3_2voxels.txt --s_num_classes 2 --t_num_classes 3 --model_type ViT-S_16 --pretrained_dir checkpoint/sam_ViT-S_16.npz --num_steps 10000 --beta 1.0 --gamma 0.01 --entropy_th 0.8 --learning_rate 0.06 --gpu_id 0 --use_cp --optimal 0 --perturbationRatio 0.0 --warmup_steps 1000
+
+python3 main.py --train_batch_size 8 --eval_batch_size 8 --dataset AD-LBD --name al --source_list data/ADLBD_2to3/adni_list_sc_noRemoveZeros_2to3.txt --target_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3_2voxels.txt --test_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3_2voxels.txt --s_num_classes 2 --t_num_classes 3 --model_type ViT-S_16 --pretrained_dir checkpoint/sam_ViT-S_16.npz --num_steps 10000 --beta 1.0 --gamma 0.01 --entropy_th 0.8 --learning_rate 0.06 --gpu_id 0 --use_cp --optimal 0 --perturbationRatio 0.0 --warmup_steps 1000
+
+python3 main.py --train_batch_size 8 --eval_batch_size 8 --dataset AD-LBD --name al --source_list data/ADLBD_2to3/adni_list_sc_noRemoveZeros_2to3.txt --target_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3_2voxels.txt --test_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3_2voxels.txt --s_num_classes 2 --t_num_classes 3 --model_type ViT-S_16 --pretrained_dir checkpoint/sam_ViT-S_16.npz --num_steps 10000 --beta 1.0 --gamma 0.01 --entropy_th 0.8 --learning_rate 0.07 --gpu_id 0 --use_cp --optimal 0 --perturbationRatio 0.0 --warmup_steps 1000
+
+python3 main.py --train_batch_size 8 --eval_batch_size 8 --dataset AD-LBD --name al --source_list data/ADLBD_2to3/adni_list_sc_noRemoveZeros_2to3.txt --target_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3_2voxels.txt --test_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3_2voxels.txt --s_num_classes 2 --t_num_classes 3 --model_type ViT-S_16 --pretrained_dir checkpoint/sam_ViT-S_16.npz --num_steps 15000 --beta 1.0 --gamma 0.01 --entropy_th 0.8 --learning_rate 0.08 --gpu_id 0 --use_cp --optimal 0 --perturbationRatio 0.0 --warmup_steps 1000
+
+python3 main.py --train_batch_size 8 --eval_batch_size 8 --dataset AD-LBD --name al --source_list data/ADLBD_2to3/adni_list_sc_noRemoveZeros_2to3.txt --target_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3_2voxels.txt --test_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3_2voxels.txt --s_num_classes 2 --t_num_classes 3 --model_type ViT-S_16 --pretrained_dir checkpoint/sam_ViT-S_16.npz --num_steps 15000 --beta 1.0 --gamma 0.01 --entropy_th 0.8 --learning_rate 0.05 --gpu_id 0 --use_cp --optimal 0 --perturbationRatio 0.0 --warmup_steps 1000
+
+python3 main.py --train_batch_size 8 --eval_batch_size 8 --dataset AD-LBD --name al --source_list data/ADLBD_2to3/adni_list_sc_noRemoveZeros_2to3.txt --target_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3_2voxels.txt --test_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3_2voxels.txt --s_num_classes 2 --t_num_classes 3 --model_type ViT-S_16 --pretrained_dir checkpoint/sam_ViT-S_16.npz --num_steps 15000 --beta 1.0 --gamma 0.01 --entropy_th 0.8 --learning_rate 0.04 --gpu_id 1 --use_cp --optimal 0 --perturbationRatio 0.0 --warmup_steps 1000
+
+python3 main.py --train_batch_size 8 --eval_batch_size 8 --dataset AD-LBD --name al --source_list data/ADLBD_2to3/adni_list_sc_noRemoveZeros_2to3.txt --target_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3_2voxels.txt --test_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3_2voxels.txt --s_num_classes 2 --t_num_classes 3 --model_type ViT-S_16 --pretrained_dir checkpoint/sam_ViT-S_16.npz --num_steps 15000 --beta 1.0 --gamma 0.01 --entropy_th 0.8 --learning_rate 0.07 --gpu_id 1 --use_cp --optimal 0 --perturbationRatio 0.0 --warmup_steps 1000
+
+python3 main.py --train_batch_size 4 --eval_batch_size 4 --dataset AD-LBD --name al --source_list data/ADLBD_2to3/adni_list_sc_noRemoveZeros_2to3.txt --target_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3_2voxels.txt --test_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3_2voxels.txt --s_num_classes 2 --t_num_classes 3 --model_type ViT-S_16 --pretrained_dir checkpoint/sam_ViT-S_16.npz --num_steps 15000 --beta 1.0 --gamma 0.01 --entropy_th 0.8 --learning_rate 0.06 --gpu_id 0 --use_cp --optimal 0 --perturbationRatio 0.0 --warmup_steps 1000
+
+python3 main.py --train_batch_size 16 --eval_batch_size 16 --dataset AD-LBD --name al --source_list data/ADLBD_2to3/adni_list_sc_noRemoveZeros_2to3.txt --target_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3_2voxels.txt --test_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3_2voxels.txt --s_num_classes 2 --t_num_classes 3 --model_type ViT-S_16 --pretrained_dir checkpoint/sam_ViT-S_16.npz --num_steps 15000 --beta 1.0 --gamma 0.01 --entropy_th 0.8 --learning_rate 0.06 --gpu_id 0 --use_cp --optimal 0 --perturbationRatio 0.0 --warmup_steps 1000
+
+python3 main.py --train_batch_size 8 --eval_batch_size 8 --dataset AD-LBD --name al --source_list data/ADLBD_2to3/adni_list_sc_noRemoveZeros_2to3.txt --target_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3_2voxels.txt --test_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3_2voxels.txt --s_num_classes 2 --t_num_classes 3 --model_type ViT-S_16 --pretrained_dir checkpoint/sam_ViT-S_16.npz --num_steps 15000 --beta 1.0 --gamma 0.01 --entropy_th 0.7 --learning_rate 0.04 --gpu_id 1 --use_cp --optimal 0 --perturbationRatio 0.0 --warmup_steps 1000
+
+python3 main.py --train_batch_size 8 --eval_batch_size 8 --dataset AD-LBD --name al --source_list data/ADLBD_2to3/adni_list_sc_noRemoveZeros_2to3.txt --target_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3_2voxels.txt --test_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3_2voxels.txt --s_num_classes 2 --t_num_classes 3 --model_type ViT-S_16 --pretrained_dir checkpoint/sam_ViT-S_16.npz --num_steps 15000 --beta 1.0 --gamma 0.01 --entropy_th 0.8 --learning_rate 0.04 --gpu_id 1 --use_cp --optimal 0 --perturbationRatio 0.0 --warmup_steps 1000
+
+python3 main.py --train_batch_size 8 --eval_batch_size 8 --dataset AD-LBD --name al --source_list data/ADLBD_2to3/adni_list_sc_noRemoveZeros_2to3.txt --target_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3_2voxels.txt --test_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3_2voxels.txt --s_num_classes 2 --t_num_classes 3 --model_type ViT-S_16 --pretrained_dir checkpoint/sam_ViT-S_16.npz --num_steps 15000 --beta 1.0 --gamma 0.01 --entropy_th 0.9 --learning_rate 0.04 --gpu_id 0 --use_cp --optimal 0 --perturbationRatio 0.0 --warmup_steps 1000
+
+python3 main.py --train_batch_size 10 --eval_batch_size 10 --dataset AD-LBD --name al --source_list data/ADLBD_2to3/adni_list_sc_noRemoveZeros_2to3.txt --target_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3_2voxels.txt --test_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3_2voxels.txt --s_num_classes 2 --t_num_classes 3 --model_type ViT-S_16 --pretrained_dir checkpoint/sam_ViT-S_16.npz --num_steps 15000 --beta 1.0 --gamma 0.01 --entropy_th 0.8 --learning_rate 0.04 --gpu_id 0 --use_cp --optimal 0 --perturbationRatio 0.0 --warmup_steps 1000
+
+
+
+
+
+
+
+
