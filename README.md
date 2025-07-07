@@ -45,13 +45,9 @@ TVT with ViT-B_16 (ImageNet-21K) performs a little bit better than TVT with ViT-
 
 ### Training:
 
-All commands can be found in `script.txt`. An example:
+All commands can be found in `script_2to3.txt`. An example:
 ```
-python3 main.py --train_batch_size 16 --dataset office --name wa \
---source_list data/office/webcam_list.txt --target_list data/office/amazon_list.txt \
---test_list data/office/amazon_list.txt --num_classes 31 --model_type ViT-B_16 \
---pretrained_dir checkpoint/ViT-B_16.npz --num_steps 5000 --img_size 256 \
---beta 0.1 --gamma 0.2 --use_im --theta 0.1
+python3 main.py --train_batch_size 16 --eval_batch_size 16 --dataset AD-LBD --name al --source_list data/ADLBD_2to3/adni_list_sc_noRemoveZeros_2to3.txt --target_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3.txt --test_list data/ADLBD_2to3/lbd_list_sc_noRemoveZeros_2to3.txt --s_num_classes 2 --t_num_classes 3 --model_type ViT-S_16 --pretrained_dir checkpoint/sam_ViT-S_16.npz --num_steps 10000 --beta 1.0 --gamma 0.01 --entropy_th 0.9 --learning_rate 0.07 --gpu_id 1 --use_cp --optimal 0 --perturbationRatio 0.0 --warmup_steps 1000
 ```
 
 <!-- 
