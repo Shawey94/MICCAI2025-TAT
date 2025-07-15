@@ -69,6 +69,13 @@ The code will automatically use the best model in `wa` to visualize the attentio
 
 ### Citation:
 ```
+@article{yu2025TAT,
+  title={Domain-Adaptive Diagnosis of Lewy Body Disease with Transferability Aware Transformer},
+  author={Yu, Xiaowei and Zhang, Jing and Chen, Tong and Zhuang, Yan and Chen, Minheng and Cao, Chao and Lyu, Yanjun and Zhang, Lu and Su, Li and Liu, Tianming and Zhu, Dajiang},
+  journal={https://arxiv.org/abs/2507.08839},
+  year={2025}
+}
+
 @article{yu2024FFTAT,
   title={Feature Fusion Transferability Aware Transformer for Unsupervised Domain Adaptation},
   author={Yu, Xiaowei and Huang, Zhe and Zhang, Zao},
