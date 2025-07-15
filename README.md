@@ -1,4 +1,4 @@
-# [Domain-Adaptive Diagnosis of Lewy Body Disease with Transferability Aware Transformer](https://arxiv.org/pdf/2411.07794), MICCAI 2025
+# [Domain-Adaptive Diagnosis of Lewy Body Disease with Transferability Aware Transformer](https://arxiv.org/abs/2507.08839), MICCAI 2025
 
 ### updates (07/07/2025)
 <!--  Add the environment requirements to reproduce the results.  --> 
